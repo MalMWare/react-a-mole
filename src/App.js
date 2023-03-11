@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <MoleContainer />
     </div>
     // <div className="App">

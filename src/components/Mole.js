@@ -1,9 +1,10 @@
-
+import { useEffect } from 'react';
+import Image from '../images/mole.png'
 
 function Mole() {
     return (
         <div>
-            <h2>Mole</h2>
+           <img src={Image} />
         </div>
     )
 }
