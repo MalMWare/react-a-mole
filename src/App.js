@@ -3,6 +3,7 @@ import MoleContainer from './components/MoleContainer';
 import './App.css';
 
 function App() {
+
   const [score, setScore] = useState(0)
 
   const createMoleHill = () => {
@@ -13,12 +14,14 @@ function App() {
         setScore={setScore} score={score}
       />)
     }
+
     return (
       <div>
         {hills}
       </div>
     )
   }
+
   return (
     <div className='App'>
       <h1>React-A-Mole!</h1>

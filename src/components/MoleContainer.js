@@ -3,6 +3,7 @@ import Mole from "./Mole"
 import EmptySlot from "./EmptySlot"
 
 function MoleContainer(props) {
+    
     let [aMole, moleVisibility] = useState(false)
 
     const handleClick = (e) => {
@@ -11,6 +12,7 @@ function MoleContainer(props) {
     }
 
     let visibleMole = aMole ? <Mole setScore={props.setScore} toggle={moleVisibility} handleClick={handleClick} /> : <EmptySlot toggle={moleVisibility} /> 
+
     return(
         <div style={{'display': 'inline-block', 'width': '30vw'}}> 
            {visibleMole}
