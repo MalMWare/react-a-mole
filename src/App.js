@@ -1,10 +1,9 @@
-//import logo from './logo.svg';
 import { useState } from 'react'
 import MoleContainer from './components/MoleContainer';
 import './App.css';
 
 function App() {
-  let [score, setScore] = useState(0)
+  const [score, setScore] = useState(0)
 
   const createMoleHill = () => {
     let hills = []
